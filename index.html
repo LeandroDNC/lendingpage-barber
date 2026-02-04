@@ -1,98 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Convite de Noivado | Ervelly e Leandro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <!-- Tipografias elegantes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./css/index.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body>
-    <!-- <audio id="bg-music" autoplay loop>
-        <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
-        Seu navegador não suporta áudio.
-    </audio> -->
+  <aside>
 
-    <div class="wrap">
-        <div class="ornament" aria-hidden="true"></div>
+  </aside>
+  <main>
+    <div class="container">
+      <img src="./assets/banner.jpg" alt="" class="banner">
+      <img src="./assets/bannerFundo.png" alt="" class="fundo">
+      <img src="./assets/Convite de Casamento Elegante com Foto (1).png" alt="" class="month">
 
-        <!-- HERO -->
-        <section class="hero"> 
-            <div class="card reveal center">
 
-                <div class="eyebrow">Convidamos você para o nosso noivado</div>
-                <div class="names" style="font-size:40px; margin:4px 0 6px">Ervelly Petresse</div>
-                <div class="names" style="font-size:40px; margin:4px 0 6px">e</div>
-                <div class="names" style="font-size:40px; margin:4px 0 6px">Leandro Marques</div>
-                <div class="divider" aria-hidden="true"></div>
-                <div class="date-row" id="dateRow">
-                    <div class="pill" id="month">NOV</div>
-                    <div class="day" id="day">22</div>
-                    <div class="pill" id="year">2025</div>
-                </div>
-                <p class="subtle" id="countdown">Contagem regressiva</p>
-            </div>
-        </section>
+      <div class="icons">
 
-        <!-- INFORMAÇÕES -->
-        <div class="inform">
-            <section class="reveal">
-                <div class="info">
-                    <div class="tile">
-                        <h4>Local</h4>
-                        <p>Boi e Brasa • Abreu e Lima – PE 📍</p>
-                        <p class="subtle">Às <strong>18:00</strong> horas</p>
-                        <div class="center" style="margin-top:10px">
-                            <a class="btn" target="_blank" rel="noopener"
-                                href="https://www.google.com/maps/search/?api=1&query=Boi%20e%20Brasa%20Abreu%20e%20Lima%20PE">Abrir
-                                no mapa</a>
-                        </div>
-                    </div>
+        <a href="https://maps.app.goo.gl/rWqtyYJNUDBaRGBa7">
+          <div class="card1">
+            <img src="./assets/locarion.svg" alt="" class="imgcard"></img>
+            <p class="infocard">COMO CHEGAR</p>
+          </div>
+        </a>
 
-                    <div class="tile">
-                        <h4>Confirmação</h4>
-                        <p>Confirme sua presença até 10/11 por WhatsApp.</p>
-                        <div class="center" style="margin-top:10px">
-                            <a class="btn" href="https://contate.me/5581987756592" target="_blank" rel="noopener">Confirmar
-                                presença</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <br>
+        <a href="https://wa.me/558183561523?text=Olá%20gostaria%20de%20confirmar%20minha%20presença" target="_blank"
+          rel="noopener">
+          <div class="card">
+            <img src="./assets/confirma.svg" alt="" class="imgcard"></img>
+            <p class="infocard">CONFIRME SUA PRESENÇA</p>
+          </div>
+        </a>
 
-            <!-- MIMO FINAL -->
-            <section class="footer reveal center">
-                <div class="tile">
-                    <div class="tag">Com carinho</div>
-                    <div class="names" style="font-size:34px; margin:4px 0 6px">Esperamos por você</div>
-                    <div style="margin-top:12px; display:flex; gap:8px; justify-content:center;">
-                        <button class="btn" id="addCalendar">Adicionar ao calendário</button>
-                    </div>
-                </div>
-            </section>
 
+        <div class="card" onclick="abrirPopup()">
+          <img src="./assets/presente.svg" alt="" class="imgcard"></img>
+          <p class="infocard">LISTA DE PRESENTE</p>
         </div>
+
+      </div>
+      <div class="borda"></div>
     </div>
 
-    <div class="bar" aria-hidden="true">
-        <a class="btn" href="#dateRow">Topo</a>
+    <div class="container1">
+      <img src="./assets/bannerFundo.png" alt="" class="fundo">
+      <img src="./assets/boi 1.svg" alt="">
+      <div class="pix">
+        <input type="text" value="LEOBEZERRAJCBABU@GMAIL.COM" id="meuInput" readonly placeholder="Chave Pix">
+        <button onclick="copiarTexto()">Copiar</button>
+      </div>
+
     </div>
+    <div class="container2">
+      <img src="./assets/Convite de Casamento Elegante com Foto (3).png" alt="">
+    </div>
+  </main>
 
-    <span class="sr-only" id="aria-confetti" aria-live="polite"></span>
 
+
+  <div class="popupoverley">
+    <div class="popup">
+      <span onclick="fecharPopup()">X</span>
+      <p>Queridos amigos e familiares, Estamos muito felizes em compartilhar este momento especial com vocês! Para o
+        nosso casamento, não temos lista de presentes — nossa preferência é receber contribuições via Pix, que nos
+        ajudarão a construir nossa nova fase juntos.
+        Agradecemos de coração pelo carinho e por fazerem parte desse dia tão importante! 💍✨
+      </p>
+      <div class="pix">
+        <input type="text" value="LEOBEZERRAJCBABU@GMAIL.COM" id="meuInput" readonly placeholder="Chave Pix">
+        <button onclick="copiarTexto()">Copiar</button>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
 
 </body>
-<script src="./js/index.js"></script>
 
 </html>
