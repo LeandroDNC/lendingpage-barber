@@ -185,6 +185,23 @@ main .month {
     width: 100%;
 }
 
+.chave {
+    background-color: #b41c1c;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+.chave:hover {
+    background-color: #8a1414;
+}
+button{
+    font-weight: bold;
+}
+
 /* animação */
 
 
