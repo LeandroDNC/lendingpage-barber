@@ -177,13 +177,51 @@ main .month {
     align-items: center;
 }
 
-.container1 img {
+
+
+.container1 .iconboi {
+    width: 40%;
+    margin: 0;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: aparecer 2s forwards;
+}
+
+.container1 .fundo {
     width: 100%;
 }
 
-.container2 img {
-    width: 100%;
+.container1 .tile {
+    position: relative;
+    margin: 0;
+    color: #b41c1c;
+    
 }
+
+.container1 .texinfo {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: aparecer 2s forwards;
+    line-height: 1.09rem;
+    margin: 5px 0;
+    font-size: 90%;
+    
+}
+.container1 .texinfo1{
+    color: #b41c1c;
+    font-weight: bold;
+    line-height: 1rem;
+    width: 80%;
+
+}
+
 
 .chave {
     background-color: #b41c1c;
@@ -198,7 +236,8 @@ main .month {
 .chave:hover {
     background-color: #8a1414;
 }
-button{
+
+button {
     font-weight: bold;
 }
 
