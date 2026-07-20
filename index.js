@@ -1,6 +1,6 @@
 (function(){
   const book = document.getElementById('book');
-  const pages = Array.from(book.querySelectorAll('.page'));
+  const pages = Array.from(book.querySelectorAll('.page','.page3'));
   const dots = Array.from(book.querySelectorAll('.dot'));
   const LAST = pages.length - 1;
   const EASE = 'cubic-bezier(.22,.8,.24,1)';
