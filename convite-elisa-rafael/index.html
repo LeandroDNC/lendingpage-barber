@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Elisa &amp; Rafael — Convite de Casamento</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/index.css">
+</head>
+<body>
+
+<div class="stage">
+
+  <!-- capa quebrando o lacre, mostrada antes do livro iniciar -->
+  <div class="intro" id="intro">
+    <div class="intro-card">
+      <svg class="intro-sprig" viewBox="0 0 100 140"><path class="stem" d="M50 130 C48 90,55 60,50 10"/><ellipse cx="50" cy="20" rx="6" ry="10"/><ellipse class="deep" cx="42" cy="34" rx="5" ry="9"/><ellipse cx="58" cy="34" rx="5" ry="9"/><ellipse class="deep" cx="46" cy="50" rx="5" ry="9"/><ellipse cx="54" cy="50" rx="5" ry="9"/></svg>
+      <div class="intro-eyebrow">O casamento de</div>
+      <div class="intro-names">Elisa &amp; Rafael</div>
+      <button class="seal" id="sealBtn" aria-label="Abrir convite">
+        <svg viewBox="0 0 80 80">
+          <circle cx="40" cy="40" r="37" class="seal-ring"/>
+          <text x="40" y="48" class="seal-letters" text-anchor="middle">E&amp;R</text>
+        </svg>
+        <span class="seal-crack" aria-hidden="true"></span>
+      </button>
+      <div class="intro-hint">Toque no lacre para abrir</div>
+    </div>
+  </div>
+
+  <div class="book-wrap" id="bookWrap">
+    <div class="flip-book" id="book">
+
+      <!-- PÁGINA 1 — CAPA / ENVELOPE (hard) -->
+      <div class="page" data-density="hard">
+        <div class="page-content cover-page">
+          <svg class="sprig tl" viewBox="0 0 100 140"><path class="stem" d="M50 130 C48 90,55 60,50 10"/><ellipse cx="50" cy="20" rx="6" ry="10"/><ellipse class="deep" cx="42" cy="34" rx="5" ry="9"/><ellipse cx="58" cy="34" rx="5" ry="9"/></svg>
+          <div class="eyebrow">Convidamos você para</div>
+          <div class="names">Elisa &amp; Rafael</div>
+          <div class="monogram">E&nbsp;R</div>
+          <div class="hero-art">
+            <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#EAF4FC"/><stop offset="55%" stop-color="#C7DDF2"/><stop offset="100%" stop-color="#8FB8DE"/>
+                </linearGradient>
+                <linearGradient id="hillGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#B9CFE6"/><stop offset="100%" stop-color="#9AB9D9"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="500" fill="url(#skyGrad)"/>
+              <path d="M0 300 Q100 260 200 300 T400 290 V500 H0 Z" fill="url(#hillGrad)" opacity="0.7"/>
+              <path d="M0 340 Q120 300 220 335 T400 330 V500 H0 Z" fill="#7EAED8" opacity="0.55"/>
+              <circle cx="200" cy="150" r="46" fill="#FFF7E6" opacity="0.85"/>
+              <circle cx="200" cy="150" r="46" fill="none" stroke="#E4CE9A" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="cover-footer">
+            <div class="date-block">12 · 12 · 2026</div>
+            <div class="date-sub">Sábado · 18h00</div>
+            <div class="place">Sítio das Lavandas — Ibiúna, SP</div>
+          </div>
+          <div class="swipe-hint">
+            <svg width="15" height="11" viewBox="0 0 16 12" fill="none" style="transform:scaleX(-1)"><path d="M1 6h13M9 1l5 5-5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Deslize para os lados
+            <svg width="15" height="11" viewBox="0 0 16 12" fill="none"><path d="M1 6h13M9 1l5 5-5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- PÁGINA 2 — CONVITE PRINCIPAL -->
+      <div class="page">
+        <div class="page-content invite-page">
+          <div class="page-number">02</div>
+          <div class="invite-eyebrow">Com a bênção de Deus e de nossas famílias</div>
+          <div class="invite-names">Elisa <span>&amp;</span> Rafael</div>
+          <p class="invite-text">convidam para celebrar o início de uma nova história,<br>com a certeza de que o amor floresce quando é regado por fé, paciência e cumplicidade.</p>
+          <div class="invite-divider"><span></span><svg viewBox="0 0 24 24" width="14" height="14" fill="var(--gold)"><path d="M12 2.5l1.9 5.8h6l-4.9 3.6 1.9 5.8-4.9-3.6-4.9 3.6 1.9-5.8-4.9-3.6h6z"/></svg><span></span></div>
+          <div class="invite-date">
+            <div class="invite-date-num">12</div>
+            <div class="invite-date-info">
+              <div>DEZEMBRO</div>
+              <div>2026 · Sábado · 18h00</div>
+            </div>
+          </div>
+          <div class="invite-place">Sítio das Lavandas, Ibiúna — SP</div>
+        </div>
+      </div>
+
+      <!-- PÁGINA 3 — FOTO + ÍCONES INTERATIVOS -->
+      <div class="page">
+        <div class="page-content menu-page">
+          <div class="page-number">03</div>
+          <div class="menu-hero">
+            <svg viewBox="0 0 300 220" preserveAspectRatio="xMidYMid slice">
+              <rect width="300" height="220" fill="#EAF2FA"/>
+              <path d="M0 160 Q75 130 150 160 T300 150 V220 H0 Z" fill="#B9CFE6"/>
+              <path d="M0 185 Q90 160 170 185 T300 180 V220 H0 Z" fill="#8FB8DE"/>
+            </svg>
+          </div>
+          <div class="menu-title">Toque nos ícones para saber mais</div>
+          <div class="menu-grid">
+            <button class="menu-item" data-modal="local">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Como chegar
+            </button>
+            <button class="menu-item" data-modal="rsvp-info">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.6L16.5 9"/></svg>
+              Confirmar presença
+            </button>
+            <button class="menu-item" data-modal="presentes">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="9.5" width="17" height="10.5" rx="1.2"/><path d="M3.5 9.5V7a1 1 0 011-1h15a1 1 0 011 1v2.5"/><path d="M12 9.5V20"/></svg>
+              Presentes
+            </button>
+            <button class="menu-item" data-modal="traje">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3.5l3 2.6 3-2.6M6 7.5v12.5a1 1 0 001 1h10a1 1 0 001-1V7.5L15 3.5H9L6 7.5z"/></svg>
+              Dress code
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PÁGINA 4 — NOSSA HISTÓRIA -->
+      <div class="page">
+        <div class="page-content story-page">
+          <div class="page-number">04</div>
+          <div class="manual-title">Nossa história</div>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2019</div>
+              <div class="tl-text">Um encontro marcado por amigos em comum — e uma conversa que não quis terminar.</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2021</div>
+              <div class="tl-text">A primeira viagem juntos. Voltamos com a certeza de que queríamos seguir viajando ao lado um do outro.</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2024</div>
+              <div class="tl-text">O pedido, ao entardecer, cercado pelas pessoas que mais amamos.</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot gold"></div>
+              <div class="tl-year">2026</div>
+              <div class="tl-text">O grande dia. E o começo de tudo o que ainda vamos viver.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PÁGINA 5 — MAPA -->
+      <div class="page">
+        <div class="page-content map-page">
+          <div class="page-number">05</div>
+          <div class="manual-title">Como chegar</div>
+          <div class="map-frame">
+            <iframe
+              title="Localização da cerimônia"
+              src="https://www.google.com/maps?q=S%C3%ADtio%20das%20Lavandas%2C%20Ibi%C3%BAna%2C%20SP&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <p class="map-address">Estrada dos Lírios, km 4 — Ibiúna, SP<br>Estacionamento gratuito no local.</p>
+          <a class="btn" href="https://www.google.com/maps/search/S%C3%ADtio%20das%20Lavandas%20Ibi%C3%BAna" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </div>
+      </div>
+
+      <!-- PÁGINA 6 — LISTA DE PRESENTES -->
+      <div class="page">
+        <div class="page-content gifts-page">
+          <div class="page-number">06</div>
+          <div class="manual-title">Lista de presentes</div>
+          <p class="gifts-intro">Sua presença é o presente mais importante. Se quiser nos mimar além disso, preparamos algumas ideias:</p>
+          <div class="gift-cards">
+            <div class="gift-card">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="1.5"><path d="M3 11l9-7 9 7v9a1 1 0 01-1 1H4a1 1 0 01-1-1v-9z"/><path d="M9 21v-7h6v7"/></svg>
+              <div class="gift-title">Casa nova</div>
+              <div class="gift-desc">Ajude a montar nosso primeiro lar</div>
+              <a class="btn ghost" href="#" target="_blank" rel="noopener">Contribuir</a>
+            </div>
+            <div class="gift-card">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="1.5"><path d="M4 20l4-9 4 4 4-7 4 12"/></svg>
+              <div class="gift-title">Lua de mel</div>
+              <div class="gift-desc">Contribua com nossa viagem dos sonhos</div>
+              <a class="btn ghost" href="#" target="_blank" rel="noopener">Contribuir</a>
+            </div>
+            <div class="gift-card">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="1.5"><rect x="4" y="9" width="16" height="11" rx="1.5"/><path d="M8 9V7a4 4 0 018 0v2"/></svg>
+              <div class="gift-title">Cozinha</div>
+              <div class="gift-desc">Utensílios para os primeiros jantares a dois</div>
+              <a class="btn ghost" href="#" target="_blank" rel="noopener">Contribuir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PÁGINA 7 — CONFIRMAÇÃO DE PRESENÇA (hard) -->
+      <div class="page" data-density="hard">
+        <div class="page-content rsvp-page">
+          <div class="page-number">07</div>
+          <div class="manual-title">Confirmar presença</div>
+          <p class="rsvp-intro">Preencha os campos abaixo — vamos abrir o WhatsApp com sua confirmação pronta para enviar.</p>
+          <form id="rsvpForm" class="rsvp-form">
+            <label>Nome completo
+              <input type="text" name="nome" required placeholder="Seu nome">
+            </label>
+            <label>Telefone
+              <input type="tel" name="telefone" required placeholder="(00) 00000-0000">
+            </label>
+            <label>Quantidade de pessoas
+              <input type="number" name="pessoas" min="1" max="10" value="1" required>
+            </label>
+            <button type="submit" class="btn full">Confirmar pelo WhatsApp</button>
+          </form>
+          <div class="rsvp-note">Confirme até 20 de novembro de 2026</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+<!-- modal -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modalClose" aria-label="Fechar">&times;</button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
+<script src="./assets/index.js"></script>
+</body>
+</html>
